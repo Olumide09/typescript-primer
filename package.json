@@ -1,0 +1,25 @@
+{
+  "devDependencies": {
+    "@types/node": "^17.0.12",
+    "typescript": "^4.5.5"
+  },
+  "name": "typescript-primer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build" : "tsc"
+    },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olumide09/typescript-primer.git"
+  },
+  "author": "Olumide Olaoye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Olumide09/typescript-primer/issues"
+  },
+  "homepage": "https://github.com/Olumide09/typescript-primer#readme",
+  "description": ""
+}
