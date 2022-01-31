@@ -20,4 +20,4 @@ const person1 = new Person(
         true)
 
 
-    logger(person1.firstName)    
+    logger(`The first person is ${person1.firstName} ${person1.lastName}, ${person1.gender === "female"? "She":"He"} likes ${person1.hobbies.join(",")}.`)    

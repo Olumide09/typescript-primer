@@ -27,5 +27,5 @@ console.log(name);
 count = 5;
 const tools_1 = __importStar(require("./tools"));
 const person1 = new tools_1.Person("Fathia", "Saludeen", "female", 1.75, ["singing", "dancing", "baking"], new Date("2002-01-09"), true);
-(0, tools_1.default)(person1.firstName);
+(0, tools_1.default)(`The first person is ${person1.firstName} ${person1.lastName}, ${person1.gender === "female" ? "She" : "He"} likes ${person1.hobbies.join(",")}`);
 //# sourceMappingURL=index.js.map
