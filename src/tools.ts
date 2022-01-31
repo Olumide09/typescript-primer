@@ -17,3 +17,10 @@ export class Person {
         this.isAlive = isAlive;
     }
 };
+
+
+export const logger = (output: string) => {
+    console.log(output);
+}
+
+export default logger;
