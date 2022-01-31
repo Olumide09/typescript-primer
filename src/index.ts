@@ -17,7 +17,9 @@ const person1 = new Person(
       1.75,
       ["singing", "dancing", "baking"],
        new Date("2002-01-09"),
-        true)
+        true);
+const pronoun = person1.gender === "female"? "She" : "He";
+ 
 
 
-    logger(`The first person is ${person1.firstName} ${person1.lastName}, ${person1.gender === "female"? "She":"He"} likes ${person1.hobbies.join(",")}.`)    
+    logger(`The first person is ${person1.firstName} ${person1.lastName}, ${person1.gender === "female"? "She":"He"} likes ${person1.hobbies.join(",")}. ${person1.birthday.toLocaleDateString}`)    
