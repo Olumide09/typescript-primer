@@ -18,6 +18,9 @@ export class Person {
     }
 };
 
+//interface is a class without methods.
+// class contains properties and methods.
+
 
 export const logger = (output: string) => {
     console.log(output);
