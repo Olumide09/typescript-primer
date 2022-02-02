@@ -31,5 +31,18 @@ let person1Data: IPersonData = {
     isAlive: true
    }
 const person1 = new Person(person1Data);
+logger(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${person1Data.gender === "male"? "She":"He"} likes ${person1Data.hobbies.join(",")}. ${person1Data.birthday.toLocaleDateString("en-NG")}`)    
 
-    logger(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${person1Data.gender === "female"? "She":"He"} likes ${person1Data.hobbies.join(",")}. ${person1Data.birthday.toLocaleDateString("en-NG")}`)    
+let person2Data: IPersonData = {
+    firstName: "Kamby",
+    lastName: "Udeani",
+    gender: "female",
+    height: 1.9,
+    hobbies: ["eating", "playing video games"],
+    birthday: new Date("2003-11-06"),
+    isAlive: true
+   }
+const person2 = new Person(person2Data);
+
+
+    logger(`The second person is ${person2Data.firstName} ${person2Data.lastName}, ${person2Data.gender === "female"? "She":"He"} likes ${person2Data.hobbies.join(",")}. ${person2Data.birthday.toLocaleDateString("en-NG")}`)    
