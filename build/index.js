@@ -26,7 +26,25 @@ name = 'Paul';
 console.log(name);
 count = 5;
 const tools_1 = __importStar(require("./tools"));
-const person1 = new tools_1.Person("Fathia", "Saludeen", "female", 1.75, ["singing", "dancing", "baking"], new Date("2002-01-09"), true);
-const pronoun = person1.gender === "female" ? "She" : "He";
-(0, tools_1.default)(`The first person is ${person1.firstName} ${person1.lastName}, ${person1.gender === "female" ? "She" : "He"} likes ${person1.hobbies.join(",")}. ${person1.birthday.toLocaleDateString}`);
+/*const person1 = new Person(
+    "Fathia"
+    ,"Saludeen",
+     "female",
+      1.75,
+      ["singing", "dancing", "baking"],
+       new Date("2002-01-09"),
+        true);
+const pronoun = person1.gender === "female"? "She" : "He";
+*/
+let person1Data = {
+    firstName: "Olumide",
+    lastName: "Olaoye",
+    gender: "male",
+    height: 1.9,
+    hobbies: ["eating", "playing soccer", "playing video games"],
+    birthday: new Date("2004-09-23"),
+    isAlive: true
+};
+const person1 = new tools_1.Person(person1Data);
+(0, tools_1.default)(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${person1Data.gender === "female" ? "She" : "He"} likes ${person1Data.hobbies.join(",")}. ${person1Data.birthday.toLocaleDateString("en-NG")}`);
 //# sourceMappingURL=index.js.map

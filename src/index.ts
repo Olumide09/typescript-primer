@@ -22,14 +22,14 @@ const pronoun = person1.gender === "female"? "She" : "He";
 */
  
 let person1Data: IPersonData = {
-    firstName: "Pius",
-    lastName: "Onobhayedo",
+    firstName: "Olumide",
+    lastName: "Olaoye",
     gender: "male",
-    height: 1.5,
-    hobbies: [],
-    birthday: new Date(1900,10,10),
+    height: 1.9,
+    hobbies: ["eating","playing soccer", "playing video games"],
+    birthday: new Date("2004-09-23"),
     isAlive: true
    }
 const person1 = new Person(person1Data);
 
-    logger(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${person1Data.gender === "female"? "She":"He"} likes ${person1Data.hobbies.join(",")}. ${person1Data.birthday.toLocaleDateString}`)    
+    logger(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${person1Data.gender === "female"? "She":"He"} likes ${person1Data.hobbies.join(",")}. ${person1Data.birthday.toLocaleDateString("en-NG")}`)    
