@@ -8,7 +8,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "build" : "tsc"
+     "build" : "tsc",
+     "go" : "npm run build && node build/index.js"
+
     },
 
   "repository": {

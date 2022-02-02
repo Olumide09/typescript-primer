@@ -1,7 +1,14 @@
+export enum Gender{
+  //  F = "female", 
+    //M = "male"
+    F = 1,
+    M = 2
+}
 export interface IPersonData {
     firstName: string,
     lastName: string,
-    gender: "male" | "female",
+    gender: Gender,
+    //gender: "male" | "female",
     height?: number, //question mark here means optional
     hobbies: string[],
     birthday?: Date, //question mark here means optional
@@ -14,7 +21,8 @@ export class Person {
     // class Person definition starts here.
     firstName: string;
     lastName: string;
-    gender: "male" | "female";
+   // gender: "male" | "female";
+   gender : Gender;
     height: number;
     hobbies: string[];
     birthday: Date;

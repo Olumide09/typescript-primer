@@ -8,7 +8,7 @@ name = 'Paul';
 console.log(name)
 count = 5
 
-import logger, {IPersonData, Person} from './tools'
+import logger, {Gender, IPersonData, Person} from './tools'
 
 /*const person1 = new Person(
     "Fathia"
@@ -24,7 +24,7 @@ const pronoun = person1.gender === "female"? "She" : "He";
 let person1Data: IPersonData = {
     firstName: "Olumide",
     lastName: "Olaoye",
-    gender: "male",
+    gender: Gender.M,
     height: 1.9,
     hobbies: ["eating","playing soccer", "playing video games"],
     birthday: new Date("2004-09-23"),
@@ -36,7 +36,7 @@ logger(`The first person is ${person1Data.firstName} ${person1Data.lastName}, ${
 let person2Data: IPersonData = {
     firstName: "Kamby",
     lastName: "Udeani",
-    gender: "female",
+    gender: Gender.F,
     height: 1.9,
     hobbies: ["eating", "playing video games"],
     birthday: new Date("2003-11-06"),
